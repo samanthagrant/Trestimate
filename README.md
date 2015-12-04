@@ -8,5 +8,5 @@ This is an incomplete inplementation for the mobile app, Trestimate, for complet
 
 Group Members include:
  + Samantha Grant ( Repo Holder )
- + Luis Almanzar
+ + Luis Almanzar, Just testing..
  + Daniel Lopez
