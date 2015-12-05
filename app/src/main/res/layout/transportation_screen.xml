@@ -10,7 +10,8 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/app_bar_main"
     android:id="@+id/runningTotal_label"
-    android:touchscreenBlocksFocus="true">
+    android:touchscreenBlocksFocus="true"
+    android:background="@drawable/main_background">
 
     <TextView
         android:layout_width="match_parent"
@@ -82,7 +83,7 @@
         android:textColor="#ffffff"
         android:textIsSelectable="false"
         android:textSize="35dp"
-        android:background="#c78c54"
+        android:background="#617A76"
         android:singleLine="false"
         android:height="69dp"
         android:gravity="center"
@@ -96,7 +97,7 @@
         android:layout_height="75dp"
         android:text="@string/Next"
         android:id="@+id/button"
-        android:background="#000066"
+        android:background="#c78c54"
         android:textColor="#ffffff"
         android:layout_alignTop="@+id/runningCost"
         android:layout_alignRight="@+id/spinner"
