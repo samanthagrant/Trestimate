@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:text="@string/Next"
+        android:id="@+id/button"
+        android:background="@color/clickableButton"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textAllCaps="false"
+        android:layout_gravity="bottom|right"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="From"
+        android:id="@+id/From"
+        android:textSize="25dp"
+        android:autoText="false"
+        android:layout_marginTop="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/datePicker2"
+        android:layout_alignStart="@+id/datePicker2" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner2"
+        android:layout_below="@+id/From"
+        android:layout_alignLeft="@+id/To"
+        android:layout_alignStart="@+id/To" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="To"
+        android:id="@+id/To"
+        android:textSize="50dp"
+        android:autoText="false"
+        android:layout_above="@+id/spinner3"
+        android:layout_alignRight="@+id/From"
+        android:layout_alignEnd="@+id/From" />
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:calendarViewShown="true"
+        android:datePickerMode="calendar"
+        android:spinnersShown="true"
+        android:clickable="true"
+        android:layout_gravity="center"
+        android:layout_above="@+id/button"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:layout_marginBottom="77dp"
+        android:id="@+id/datePicker2" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner3"
+        android:layout_above="@+id/datePicker2"
+        android:layout_alignLeft="@+id/datePicker2"
+        android:layout_alignStart="@+id/datePicker2" />
+
+</RelativeLayout>
