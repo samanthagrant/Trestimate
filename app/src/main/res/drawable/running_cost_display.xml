@@ -5,7 +5,7 @@
         android:radius="5dp"
         />
     <solid
-        android:color="@color/buttonColor"
+        android:color="@color/dark_grey"
         />
     <size
         android:width="150dp"

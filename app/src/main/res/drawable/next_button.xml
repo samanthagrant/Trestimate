@@ -5,7 +5,7 @@
         android:radius="5dp"
         />
     <solid
-        android:color="@color/clickableButton"
+        android:color="@color/burnt_orange"
         />
     <size
         android:width="150dp"
