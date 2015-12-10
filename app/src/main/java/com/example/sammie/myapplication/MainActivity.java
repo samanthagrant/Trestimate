@@ -12,10 +12,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
+import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    public static String Destinations;
+    public static String TravelDates;
+    public static String LeaveDate;
+    public static String ReturningDate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +49,22 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void GoToTransportScreen(View v){
+        String dummy;
+
+        Spinner spinner = (Spinner) findViewById(R.id.FromDestinations);
+        dummy = spinner.getSelectedItem().toString();
+        int index = dummy.indexOf(',');
+        Destinations = dummy.substring(0, index);
+
+        Destinations += " to ";
+
+        Spinner spinner1 = (Spinner) findViewById(R.id.ToDestinations);
+        dummy = spinner1.getSelectedItem().toString();
+        index = dummy.indexOf(',');
+        Destinations += dummy.substring(0, index);
+
+        TravelDates = LeaveDate + " - " + ReturningDate;
+
         Intent intent = new Intent(this, Transportation.class);
         startActivity(intent);
     }
@@ -90,7 +111,13 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void showDatePickerDialog(View v) {
-        DialogFragment newFragment = new DatePickerFragment();
+        DialogFragment newFragment = new DatePickerLeaving();
         newFragment.show(getFragmentManager(), "datePicker");
     }
+
+    public void showDatePicker(View v){
+        DialogFragment newFragment = new DatePickerArriving();
+        newFragment.show(getFragmentManager(),"datePicker");
+    }
+
 }
