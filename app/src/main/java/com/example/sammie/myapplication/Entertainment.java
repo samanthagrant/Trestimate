@@ -21,4 +21,5 @@ public class Entertainment extends Activity {
         Intent intent = new Intent(this, Final.class);
         startActivity(intent);
     }
+
 }
