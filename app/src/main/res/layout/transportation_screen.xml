@@ -85,11 +85,9 @@
         android:singleLine="false"
         android:height="69dp"
         android:gravity="center"
-        android:layout_marginBottom="66dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="false"
-        android:layout_alignLeft="@+id/spinner" />
+        android:layout_alignParentStart="false" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -120,12 +118,9 @@
         android:textColor="#ffffff"
         android:textSize="30dp"
         android:textAllCaps="false"
-        android:layout_alignTop="@+id/runningCost"
-        android:layout_alignRight="@+id/spinner"
-        android:layout_alignParentEnd="true"
+        android:layout_alignParentEnd="false"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="66dp"
         android:onClick="GoToLodgingScreen"
         android:nestedScrollingEnabled="true" />
 
