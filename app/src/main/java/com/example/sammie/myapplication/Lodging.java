@@ -21,4 +21,9 @@ public class Lodging extends Activity {
         Intent intent = new Intent(this, Entertainment.class);
         startActivity(intent);
     }
+
+    public void GoToTransportation(View v){
+        Intent intent = new Intent(this, Entertainment.class);
+        startActivity(intent);
+    }
 }

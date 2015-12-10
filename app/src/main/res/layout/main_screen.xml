@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="From"
-        android:id="@+id/From"
+        android:id="@+id/Title"
         android:textSize="25dp"
         android:autoText="false"
         android:layout_alignParentTop="true"
@@ -29,10 +29,10 @@
         android:id="@+id/FromDestinations"
         android:entries="@array/leaving_destinations"
         android:layout_alignParentTop="false"
-        android:layout_toRightOf="@+id/From"
-        android:layout_toEndOf="@+id/From"
+        android:layout_toRightOf="@+id/Title"
+        android:layout_toEndOf="@+id/Title"
         android:layout_alignParentEnd="false"
-        android:layout_alignTop="@+id/From"
+        android:layout_alignTop="@+id/Title"
         android:paddingStart="25dp"
         />
 
@@ -44,7 +44,7 @@
         android:textSize="25dp"
         android:autoText="false"
         android:text="To"
-        android:layout_below="@+id/From"
+        android:layout_below="@+id/Title"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="false"
         android:layout_marginTop="45dp" />
@@ -60,6 +60,7 @@
         android:layout_alignParentEnd="false"
         android:paddingStart="25dp"
         android:layout_alignLeft="@+id/TravelDestinations" />
+
 
     <Button
         android:layout_width="150dp"

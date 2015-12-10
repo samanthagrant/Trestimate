@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity
     public static String TravelDates;
     public static String LeaveDate;
     public static String ReturningDate;
+    
+    static int runningTotal = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

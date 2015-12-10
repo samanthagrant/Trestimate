@@ -9,5 +9,18 @@
         <item>Orlando, Florida (MCO)</item>
         <item>Madrid Barajas Airport (MAD)</item>
     </string-array>
+    <string-array name="lodging_possibilities">
+        <item>In a Hotel</item>
+        <item>With Friends/Family</item>
+        <item>Find a Place (Craiglist)</item>
+        <item>>Underneath a bridge</item>
+    </string-array>
+
+    <string-array name="travel_possibilities">
+        <item>Plane</item>
+        <item>Train</item>
+        <item>Bus</item>
+        <item>Drive</item>
+    </string-array>
 
 </resources>

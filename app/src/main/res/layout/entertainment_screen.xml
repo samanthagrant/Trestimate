@@ -56,7 +56,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="How are you going to get there?"
+        android:text="Entertainment"
         android:id="@+id/destinationTransport"
         android:textSize="18dp"
         android:textColor="#FF000000"
@@ -65,22 +65,11 @@
         android:layout_below="@+id/Dates"
         android:layout_centerHorizontal="true" />
 
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/spinner"
-        android:layout_below="@+id/destinationTransport"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="false"
-        android:paddingTop="15dp"
-        android:layout_marginTop="25dp" />
-
     <TextView
         android:layout_width="150dp"
         android:layout_height="75dp"
         android:text="@string/Cost"
-        android:id="@+id/runningCost"
+        android:id="@+id/RunningTotalView"
         android:textColor="#ffffff"
         android:textIsSelectable="false"
         android:textSize="35dp"
@@ -95,19 +84,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Transportation Text"
-        android:id="@+id/transportationCost"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Running Total"
         android:id="@+id/runningTotal_label"
-        android:layout_above="@+id/runningCost"
+        android:layout_above="@+id/RunningTotalView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textSize="20sp" />
@@ -125,5 +105,57 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:onClick="GoToFinalScreen"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tours"
+        android:id="@+id/tour_checkBox"
+        android:layout_below="@+id/destinationTransport"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Night Life "
+        android:id="@+id/clubs_checkBox"
+        android:checked="false"
+        android:layout_below="@+id/drinking_checkBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amusement Parks"
+        android:id="@+id/parks_checkBox"
+        android:checked="false"
+        android:layout_below="@+id/musuem_checkBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Musuems"
+        android:id="@+id/musuem_checkBox"
+        android:layout_below="@+id/tour_checkBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bars and Wineries"
+        android:id="@+id/drinking_checkBox"
+        android:checked="false"
+        android:layout_below="@+id/parks_checkBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
