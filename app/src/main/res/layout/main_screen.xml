@@ -50,16 +50,16 @@
         android:layout_marginTop="45dp" />
 
     <Spinner
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/toDate"
-        android:entries="@array/arriving_destinations"
-        android:layout_alignTop="@+id/To"
-        android:layout_toRightOf="@+id/To"
-        android:layout_toEndOf="@+id/To"
-        android:layout_alignParentEnd="false"
-        android:paddingStart="25dp"
-        android:layout_alignLeft="@+id/source" />
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/toDate"
+    android:entries="@array/arriving_destinations"
+    android:layout_alignTop="@+id/To"
+    android:layout_toRightOf="@+id/To"
+    android:layout_toEndOf="@+id/To"
+    android:layout_alignParentEnd="false"
+    android:paddingStart="25dp"
+    android:layout_alignLeft="@+id/source" />
 
     <Button
         android:layout_width="150dp"

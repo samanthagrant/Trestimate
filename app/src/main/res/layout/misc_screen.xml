@@ -55,7 +55,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="How are you going to get there?"
+        android:text="Any miscellaneous spending?"
         android:id="@+id/destinationTransport"
         android:textSize="18dp"
         android:textColor="#FF000000"
