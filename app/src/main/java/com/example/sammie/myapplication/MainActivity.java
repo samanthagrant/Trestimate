@@ -17,6 +17,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    
     static int runningTotal = 0;
 
     @Override
