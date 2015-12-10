@@ -59,14 +59,14 @@
         android:layout_toEndOf="@+id/To"
         android:layout_alignParentEnd="false"
         android:paddingStart="25dp"
-        android:layout_alignLeft="@+id/TravelDestinations" />
+        android:layout_alignLeft="@+id/FromDestinations" />
 
 
     <Button
         android:layout_width="150dp"
         android:layout_height="75dp"
         android:id="@+id/MainNext"
-        android:background="@color/burnt_orange"
+        android:background="@drawable/next_button"
         android:textColor="#ffffff"
         android:textSize="30sp"
         android:textAllCaps="false"
@@ -94,7 +94,7 @@
     android:layout_height="50dp"
         android:onClick="showDatePickerDialog"
         android:id="@+id/leavingDateButton"
-        android:background="@drawable/calendar_icon"
+        android:background="@mipmap/calendar_icon"
         android:layout_centerHorizontal="true"
         android:layout_alignTop="@+id/leavingDate"
         android:layout_alignParentEnd="true" />
@@ -117,7 +117,7 @@
         android:layout_height="50dp"
         android:onClick="showDatePicker"
         android:id="@+id/returnDateButton"
-        android:background="@drawable/calendar_icon"
+        android:background="@mipmap/calendar_icon"
         android:layout_alignTop="@+id/returnDate"
         android:layout_alignRight="@+id/returnDate"
         android:layout_alignParentEnd="true"

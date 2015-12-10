@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -24,10 +25,17 @@ public class Transportation extends Activity {
 
         TextView x = (TextView) findViewById(R.id.Dates);
         x.setText(MainActivity.TravelDates);
+
+        TextView cost = (TextView) findViewById(R.id.RunningTotalTransportation);
+
+        String TransportCost = "$" + MainActivity.runningTotal;
+        cost.setText(TransportCost);
     }
 
     public void GoToLodgingScreen(View v){
         Intent intent = new Intent(this, Lodging.class);
         startActivity(intent);
     }
+
+
 }
