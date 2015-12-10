@@ -115,7 +115,7 @@
         android:layout_width="150dp"
         android:layout_height="75dp"
         android:text="@string/Next"
-        android:id="@+id/button"
+        android:id="@+id/TransportNext"
         android:background="@drawable/next_button"
         android:textColor="#ffffff"
         android:textSize="30dp"
@@ -125,6 +125,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="66dp" />
+        android:layout_marginBottom="66dp"
+        android:onClick="GoToLodgingScreen"
+        android:nestedScrollingEnabled="true" />
 
 </RelativeLayout>

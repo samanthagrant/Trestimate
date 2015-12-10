@@ -13,12 +13,12 @@
     android:background="@drawable/main_background">
 
     <TextView
-        android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="From"
         android:id="@+id/From"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:autoText="false"
         android:layout_alignParentTop="true"
         android:layout_marginTop="25dp" />
@@ -27,38 +27,42 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/source"
-        android:layout_below="@+id/From"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="10dp"
-        android:entries="@array/leaving_destinations"/>
+        android:entries="@array/leaving_destinations"
+        android:layout_alignParentTop="false"
+        android:layout_toRightOf="@+id/From"
+        android:layout_toEndOf="@+id/From"
+        android:layout_alignParentEnd="false"
+        android:layout_alignTop="@+id/From"
+        android:paddingStart="25dp" />
 
     <TextView
-        android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:id="@+id/To"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:autoText="false"
         android:text="To"
-        android:layout_below="@+id/source"
+        android:layout_below="@+id/From"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp" />
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="20dp" />
 
     <Spinner
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/toDate"
-        android:layout_alignLeft="@+id/From"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/To" />
+        android:entries="@array/arriving_destinations"
+        android:layout_alignTop="@+id/To"
+        android:layout_toRightOf="@+id/To"
+        android:layout_toEndOf="@+id/To"
+        android:layout_alignParentEnd="false"
+        android:paddingStart="25dp" />
 
     <Button
         android:layout_width="150dp"
         android:layout_height="75dp"
-        android:text="@string/Next"
-        android:id="@+id/button"
+        android:id="@+id/MainNext"
         android:background="@color/burnt_orange"
         android:textColor="#ffffff"
         android:textSize="30sp"
@@ -68,17 +72,21 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="false"
         android:layout_marginBottom="50dp"
-        android:layout_marginRight="15dp" />
+        android:layout_marginRight="15dp"
+        android:text="Next"
+        android:onClick="GoToTransportScreen" />
 
     <TextView
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:id="@+id/leavingDate"
         android:hint="Leaving Date"
-        android:textSize="18dp"
+        android:textSize="25dp"
+        android:clickable="true"
+        android:paddingTop="10dp"
         android:layout_below="@+id/toDate"
-        android:layout_alignRight="@+id/leavingDateButton"
-        android:layout_alignEnd="@+id/leavingDateButton" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
 
     <Button
     android:layout_width="50dp"
@@ -86,15 +94,18 @@
         android:onClick="showDatePickerDialog"
         android:id="@+id/leavingDateButton"
         android:background="@drawable/calendar_icon"
-        android:layout_toStartOf="@+id/button"
-        android:layout_alignTop="@+id/leavingDate" />
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/leavingDate"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:id="@+id/returnDate"
         android:hint="Returning Date"
-        android:textSize="18dp"
+        android:textSize="25dp"
+        android:clickable="true"
+        android:paddingTop="10dp"
         android:layout_below="@+id/leavingDate"
         android:layout_alignLeft="@+id/leavingDate"
         android:layout_alignStart="@+id/leavingDate" />
@@ -107,6 +118,6 @@
         android:background="@drawable/calendar_icon"
         android:layout_alignTop="@+id/returnDate"
         android:layout_alignRight="@+id/returnDate"
-        android:layout_alignEnd="@+id/returnDate" />
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

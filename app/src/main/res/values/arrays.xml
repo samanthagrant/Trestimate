@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string-array name="leaving_destinations">
-    <item>Reno, Nevada (RNO)</item>
-    <item>Las Vegas, Nevada (LAS)</item>
-    <item>Los Angeles, California (LAX)</item>
-</string-array>
+    <string-array name="leaving_destinations">
+        <item>Reno, Nevada (RNO)</item>
+        <item>Las Vegas, Nevada (LAS)</item>
+        <item>Los Angeles, California (LAX)</item>
+    </string-array>
+    <string-array name="arriving_destinations">
+        <item>Orlando, Florida (MCO)</item>
+        <item>Madrid Barajas Airport (MAD)</item>
+    </string-array>
+
 </resources>
