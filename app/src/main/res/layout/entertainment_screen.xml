@@ -12,8 +12,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:touchscreenBlocksFocus="true"
     tools:context=".MainActivity"
-    android:background="@drawable/main_background"
-    android:id="@+id/">
+    android:background="@drawable/main_background">
 
     <TextView
         android:layout_width="match_parent"

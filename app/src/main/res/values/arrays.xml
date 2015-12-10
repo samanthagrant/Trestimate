@@ -16,4 +16,11 @@
         <item>>Underneath a bridge</item>
     </string-array>
 
+    <string-array name="travel_possibilities">
+        <item>Plane</item>
+        <item>Train</item>
+        <item>Bus</item>
+        <item>Drive</item>
+    </string-array>
+
 </resources>
