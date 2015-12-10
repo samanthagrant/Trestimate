@@ -55,7 +55,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="How are you going to get there?"
+        android:text="Where are you going to stay?"
         android:id="@+id/destinationTransport"
         android:textSize="18dp"
         android:textColor="#FF000000"
@@ -68,12 +68,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/spinner"
-        android:layout_below="@+id/destinationTransport"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="false"
+        android:entries="@array/lodging_possibilities"
         android:paddingTop="15dp"
-        android:layout_marginTop="25dp" />
+        android:layout_below="@+id/destinationTransport"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="150dp"
@@ -89,7 +88,8 @@
         android:gravity="center"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="false" />
+        android:layout_alignParentStart="false"
+        android:onClick="GoToTransportation"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -97,8 +97,9 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Transportation Text"
         android:id="@+id/transportationCost"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/ratingBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="106dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -124,5 +125,12 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:onClick="GoToEntertainmentScreen"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
