@@ -32,6 +32,10 @@ public class Transportation extends Activity {
         cost.setText(TransportCost);
     }
 
+    public void incrementVal(View v){
+        //
+    }
+
     public void GoToLodgingScreen(View v){
         Intent intent = new Intent(this, Lodging.class);
         startActivity(intent);

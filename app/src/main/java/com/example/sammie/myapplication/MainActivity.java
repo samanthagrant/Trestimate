@@ -23,6 +23,9 @@ public class MainActivity extends AppCompatActivity
     public static String ReturningDate;
     
     static int runningTotal = 0;
+    static int transportation_sub = 0;
+    static int lodging_sub = 0;
+    static int entertainment_sub = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
