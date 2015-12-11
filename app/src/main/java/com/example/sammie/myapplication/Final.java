@@ -37,6 +37,11 @@ public class Final extends Activity {
 
         String lcost = "$" + Lodging.lastChanged;
         LodgeCost.setText(lcost);
+
+        TextView eCost = (TextView) findViewById(R.id.entertainTotal);
+
+        String etcost = "$" + Entertainment.totalVal;
+        eCost.setText(etcost);
     }
 
 }
