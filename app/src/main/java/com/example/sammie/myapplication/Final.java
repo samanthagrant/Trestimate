@@ -16,5 +16,8 @@ public class Final extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.final_screen);
     }
-
+    public void GoBackToStart(View v){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 }
