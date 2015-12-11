@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void GoToTransportScreen(View v){
-        String dummy;
+        String dummy, dummy2;
 
         Spinner spinner = (Spinner) findViewById(R.id.FromDestinations);
         dummy = spinner.getSelectedItem().toString();
@@ -61,9 +61,9 @@ public class MainActivity extends AppCompatActivity
         Destinations += " to ";
 
         Spinner spinner1 = (Spinner) findViewById(R.id.ToDestinations);
-        dummy = spinner1.getSelectedItem().toString();
-        index = dummy.indexOf(',');
-        Destinations += dummy.substring(0, index);
+        dummy2 = spinner1.getSelectedItem().toString();
+        index = dummy2.indexOf(',');
+        Destinations += dummy2.substring(0, index);
 
         TravelDates = LeaveDate + " - " + ReturningDate;
 

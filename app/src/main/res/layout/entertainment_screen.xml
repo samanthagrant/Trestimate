@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:text="Entertainment"
         android:id="@+id/destinationTransport"
-        android:textSize="18dp"
+        android:textSize="22dp"
         android:textColor="#FF000000"
         android:textStyle="bold"
         android:paddingTop="25dp"
@@ -101,7 +101,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="false"
         android:checked="false"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="15dp"
         android:textSize="18dp" />
 
