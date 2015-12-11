@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="leaving_destinations">
+        <item>Reno, Nevada (RNO)</item>
+        <item>Las Vegas, Nevada (LAS)</item>
+        <item>Los Angeles, California (LAX)</item>
+    </string-array>
+    <string-array name="arriving_destinations">
+        <item>Orlando, Florida (MCO)</item>
+        <item>Madrid Barajas, Spain (MAD)</item>
+    </string-array>
+    <string-array name="lodging_possibilities">
+        <item>Pick Where You Will Stay</item>
+        <item>In a Hotel</item>
+        <item>With Friends/Family</item>
+        <item>Find a Place (Craiglist)</item>
+        <item>Underneath a bridge</item>
+    </string-array>
+
+    <string-array name="travel_possibilities">
+        <item>Pick Mode of Transportation</item>
+        <item>Plane</item>
+        <item>Train</item>
+        <item>Bus</item>
+        <item>Drive</item>
+    </string-array>
+
+</resources>
