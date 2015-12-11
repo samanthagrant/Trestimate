@@ -18,7 +18,7 @@ import android.widget.TimePicker;
 import java.util.Calendar;
 import java.util.Date;
 
-public class DatePickerFragment extends DialogFragment
+public class DatePickerArriving extends DialogFragment
         implements DatePickerDialog.OnDateSetListener {
 
     @Override
@@ -37,9 +37,11 @@ public class DatePickerFragment extends DialogFragment
     public void onDateSet(DatePicker view, int year, int month, int day) {
         final String date = month + "/" + day + "/" + year;
 
-        getActivity().setContentView(R.layout.main_screen);
-        TextView textView = (TextView) getActivity().findViewById(R.id.leavingDate);
+        //getActivity().setContentView(R.layout.main_screen);
+        TextView textView = (TextView) getActivity().findViewById(R.id.returnDate);
         textView.setText(date);
+
+        MainActivity.ReturningDate = date;
 
     }
 

@@ -10,7 +10,9 @@
     tools:showIn="@layout/app_bar_main"
     android:touchscreenBlocksFocus="true"
     tools:context=".MainActivity"
-    android:background="@drawable/main_background">
+    android:background="@drawable/main_background"
+
+    >
 
     <TextView
         android:layout_width="wrap_content"
@@ -18,7 +20,7 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="From"
         android:id="@+id/Title"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:autoText="false"
         android:layout_alignParentTop="true"
         android:layout_marginTop="25dp" />
@@ -26,7 +28,7 @@
     <Spinner
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/source"
+        android:id="@+id/FromDestinations"
         android:entries="@array/leaving_destinations"
         android:layout_alignParentTop="false"
         android:layout_toRightOf="@+id/Title"
@@ -34,6 +36,7 @@
         android:layout_alignParentEnd="false"
         android:layout_alignTop="@+id/Title"
         android:paddingStart="25dp"
+
         />
 
     <TextView
@@ -41,7 +44,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:id="@+id/To"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:autoText="false"
         android:text="To"
         android:layout_below="@+id/Title"
@@ -50,22 +53,23 @@
         android:layout_marginTop="45dp" />
 
     <Spinner
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/toDate"
-    android:entries="@array/arriving_destinations"
-    android:layout_alignTop="@+id/To"
-    android:layout_toRightOf="@+id/To"
-    android:layout_toEndOf="@+id/To"
-    android:layout_alignParentEnd="false"
-    android:paddingStart="25dp"
-    android:layout_alignLeft="@+id/source" />
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ToDestinations"
+        android:entries="@array/arriving_destinations"
+        android:layout_alignTop="@+id/To"
+        android:layout_toRightOf="@+id/To"
+        android:layout_toEndOf="@+id/To"
+        android:layout_alignParentEnd="false"
+        android:paddingStart="25dp"
+        android:layout_alignLeft="@+id/FromDestinations" />
+
 
     <Button
         android:layout_width="150dp"
         android:layout_height="75dp"
         android:id="@+id/MainNext"
-        android:background="@color/burnt_orange"
+        android:background="@drawable/next_button"
         android:textColor="#ffffff"
         android:textSize="30sp"
         android:textAllCaps="false"
@@ -81,10 +85,10 @@
         android:layout_height="50dp"
         android:id="@+id/leavingDate"
         android:hint="Leaving Date"
-        android:textSize="25dp"
-        android:clickable="true"
+        android:textSize="20dp"
+        android:clickable="false"
         android:paddingTop="10dp"
-        android:layout_below="@+id/toDate"
+        android:layout_below="@+id/To"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp" />
 
@@ -93,7 +97,7 @@
     android:layout_height="50dp"
         android:onClick="showDatePickerDialog"
         android:id="@+id/leavingDateButton"
-        android:background="@drawable/calendar_icon"
+        android:background="@mipmap/calendar_icon"
         android:layout_centerHorizontal="true"
         android:layout_alignTop="@+id/leavingDate"
         android:layout_alignParentEnd="true" />
@@ -103,7 +107,7 @@
         android:layout_height="50dp"
         android:id="@+id/returnDate"
         android:hint="Returning Date"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:clickable="true"
         android:paddingTop="10dp"
         android:layout_below="@+id/leavingDate"
@@ -114,11 +118,12 @@
     <Button
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:onClick="showDatePickerDialog"
+        android:onClick="showDatePicker"
         android:id="@+id/returnDateButton"
-        android:background="@drawable/calendar_icon"
+        android:background="@mipmap/calendar_icon"
         android:layout_alignTop="@+id/returnDate"
         android:layout_alignRight="@+id/returnDate"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:nestedScrollingEnabled="false" />
 
 </RelativeLayout>
