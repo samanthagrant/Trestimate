@@ -52,7 +52,7 @@
     <Spinner
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/TransportationSpinner"
+        android:id="@+id/lodgeSpinner"
         android:entries="@array/lodging_possibilities"
         android:paddingTop="15dp"
         android:layout_below="@+id/destinationTransport"

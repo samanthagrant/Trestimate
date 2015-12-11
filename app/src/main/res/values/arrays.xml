@@ -10,13 +10,15 @@
         <item>Madrid Barajas, Spain (MAD)</item>
     </string-array>
     <string-array name="lodging_possibilities">
+        <item>Pick Where You Will Stay</item>
         <item>In a Hotel</item>
         <item>With Friends/Family</item>
         <item>Find a Place (Craiglist)</item>
-        <item>>Underneath a bridge</item>
+        <item>Underneath a bridge</item>
     </string-array>
 
     <string-array name="travel_possibilities">
+        <item>Pick Mode of Transportation</item>
         <item>Plane</item>
         <item>Train</item>
         <item>Bus</item>

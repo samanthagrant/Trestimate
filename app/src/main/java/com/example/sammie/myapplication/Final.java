@@ -27,9 +27,21 @@ public class Final extends Activity {
 
         String TransportCost = "$" + MainActivity.runningTotal;
         cost.setText(TransportCost);
+
+        TextView trans_cost = (TextView) findViewById(R.id.transFinal);
+
+        String TranspoCost = "$" + Transportation.lastChanged;
+        trans_cost.setText(TranspoCost);
+
+        TextView LodgeCost = (TextView) findViewById(R.id.lodgeFinal);
+
+        String lcost = "$" + Lodging.lastChanged;
+        LodgeCost.setText(lcost);
+
+        TextView eCost = (TextView) findViewById(R.id.entertainTotal);
+
+        String etcost = "$" + Entertainment.totalVal;
+        eCost.setText(etcost);
     }
-    public void GoBackToStart(View v){
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
+
 }
