@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle" >
     <solid android:color="@color/turquoise"/>
 
+=======
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+    <solid android:color="@color/turquoise"/>
+
+>>>>>>> 72a44f5b9aef083050dc90794963fd6529f7a689
 </shape>

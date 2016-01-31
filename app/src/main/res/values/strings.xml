@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <resources>
     <string name="app_name">Trestimate</string>
 
@@ -12,3 +13,19 @@
     <string name="Next">Next</string>
     <string name="Cost">$300.00</string>
 </resources>
+=======
+<resources>
+    <string name="app_name">Trestimate</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="ArrivingDate">Arriving Date</string>
+    <string name="LeavingDate">Leaving Date</string>
+    <string name="Destination">Destination</string>
+    <string name="LeavingFrom">Leaving From</string>
+    <string name="Next">Next</string>
+    <string name="Cost">$300.00</string>
+</resources>
+>>>>>>> 72a44f5b9aef083050dc90794963fd6529f7a689
